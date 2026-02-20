@@ -5,6 +5,7 @@ from datetime import datetime
 import uuid
 import random
 import html
+CLOUD_DEMO_URL = "https://preclear-demo.onrender.com/"
 
 app = FastAPI(title="PreClear Investor Demo")
 
@@ -337,6 +338,11 @@ async def home():
     <p class="subtle">
       Upload any file to generate an analysis report (behavioral signals + deception trigger + risk verdict).
     </p>
+    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
+      <a class="btn-link secondary" href="https://preclear-demo.onrender.com/" target="_blank" rel="noopener noreferrer">
+        ☁ Open Cloud Demo
+      </a>
+</div>
     <div class="metrics">
   <div class="metric">
     <div class="k">Time to Decision</div>
