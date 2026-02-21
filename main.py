@@ -296,6 +296,22 @@ a:hover { text-decoration: underline; }
   line-height: 1.45;
 }
 
+.hero {
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: 26px;
+  line-height: 1.3;
+  margin: 0 0 8px 0;
+}
+
+.hero p {
+  font-size: 15px;
+  color: var(--muted);
+  margin: 0;
+}
+
 @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } .split { grid-template-columns: 1fr; } }
 </style>
 """
@@ -334,6 +350,17 @@ async def home():
     content = """
 <div class="grid">
   <div class="card">
+    <div class="hero">
+      <h1>
+        PreClear stops threats before they enter the enterprise.
+      </h1>
+      <p>
+        Using behavioral interception and high-confidence deception signals, 
+        we detect attacker intent before compromise happens.
+      </p>
+    </div>
+
+    <hr/>
     <h2>Upload Artifact for Pre-Ingress Analysis</h2>
     <p class="subtle">
       Upload any file to generate an analysis report (behavioral signals + deception trigger + risk verdict).
